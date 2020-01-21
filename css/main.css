@@ -1,0 +1,188 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+[src^="ASSETS/icons"] {
+    height: 20px;
+    margin: 0 5px;
+}
+
+/*---------------------------*/
+/*----------HEADER-----------*/
+/*---------------------------*/
+
+/* Pour fixer la navbar, il faut appliquer position fixed ainsi qu'une largeur de 100%*/
+
+.flex-navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 2.7em;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    background-color: #fff;
+}
+
+.nav-left,
+.nav-left :nth-child(2),
+.nav-right,
+.nav-right :first-child {
+    margin: 0 1em;
+}
+
+.nav-left img,
+.nav-left p,
+.nav-center img,
+.nav-right button {
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.nav-center img {
+    margin-top: .2em;
+}
+
+.nav-right button {
+    border-radius: 3px;
+    height: 2.5em;
+    font-size: .7rem;
+    line-height: 11px;
+    font-weight: bold;
+    background-color: #567b95;
+    border: 1px solid #326891;
+    color: #fff;
+}
+
+/*---------------------------*/
+/*-----------MAIN------------*/
+/*---------------------------*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.main-grid h1 {
+    grid-column: 6 / 16;
+    grid-auto-rows: auto;
+    margin-top: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.main-grid figure {
+    grid-column: 4 / 22;
+    grid-auto-rows: auto;
+}
+
+.main-grid [src^="ASSETS/img/hero-img.jpg"] {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.main-grid figcaption {
+    width: 700px;
+    color: rgb(83, 80, 80);
+}
+
+.main-grid h3 {
+    grid-row: 3;
+    grid-column: 7 / 19;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.social {
+    grid-row: 4;
+    grid-column: 7 / 19;
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-text {
+    grid-column: 7 / 19;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    color: rgb(39, 37, 37);
+}
+
+.text1 {
+    grid-row: 5;
+}
+
+.text2 {
+    grid-row: 6;
+}
+
+.aside {
+    grid-row: 6;
+    grid-column: 20 / 24;
+}
+
+.aside img {
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.aside-text {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------*/
+/* Créer "The Theory of Inflation" sur row 7 */
+/*-------------------------------------------*/
+
+.text3 {
+    grid-row: 8;
+}
+
+iframe {
+    grid-row: 9;
+    grid-column: 7 / 19;
+}
+
+.text4 {
+    grid-row: 10;
+    grid-column: 7 / 19;
+}
+
+.text5 {
+    grid-row: 11;
+}
+
+/*-------------------------------------------*/
+/*------- Insérer figure et figcaption ------*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*--------------- Insérer text6 -------------*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*------ Créer les deux derniers blocs ------*/
+/*-------------------------------------------*/

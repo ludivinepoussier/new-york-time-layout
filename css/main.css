@@ -18,6 +18,11 @@ html {
     margin: 0 5px;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 /*---------------------------*/
 /*----------HEADER-----------*/
 /*---------------------------*/
@@ -93,7 +98,7 @@ html {
     font-style: italic;
 }
 
-.main-grid figure {
+.main-grid .hero-img {
     grid-column: 4 / 22;
     grid-auto-rows: auto;
 }
@@ -103,7 +108,7 @@ html {
     text-align: center;
 }
 
-.main-grid figcaption {
+.main-grid .hero-img-legend {
     width: 700px;
     color: rgb(83, 80, 80);
 }
@@ -154,7 +159,42 @@ html {
 }
 
 /*-------------------------------------------*/
-/* Créer "The Theory of Inflation" sur row 7 */
+/*-------"The Theory of Inflation"-----------*/
+/*-------------------------------------------*/
+
+.full-dev {
+    grid-row: 7;
+    grid-column: 4 / 23;
+    color: rgb(58, 55, 55);
+}
+
+.full-dev-flex {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.full-dev-flex figure {
+    flex: 1 1 24%;
+    margin: 5px;
+}
+
+.full-dev-flex img {
+    width: 200px;
+}
+
+.full-dev-flex span,
+.full-dev h2 {
+    font-weight: bold;
+}
+
+.full-dev-flex span {
+    font-size: .8rem;
+}
+
+/*-------------------------------------------*/
+/*----- End of"The Theory of Inflation" -----*/
 /*-------------------------------------------*/
 
 .text3 {
@@ -176,13 +216,148 @@ iframe {
 }
 
 /*-------------------------------------------*/
-/*------- Insérer figure et figcaption ------*/
+/*---------------- Pic - 2 ------------------*/
 /*-------------------------------------------*/
 
-/*-------------------------------------------*/
-/*--------------- Insérer text6 -------------*/
-/*-------------------------------------------*/
+.pic-2 {
+    grid-row: 12;
+    grid-column: 7 / 19;
+}
 
 /*-------------------------------------------*/
-/*------ Créer les deux derniers blocs ------*/
+/*------------------ text6 ------------------*/
 /*-------------------------------------------*/
+
+.text6 {
+    grid-row: 13;
+}
+
+/*-------------------------------------------*/
+/*------- More in Space and Astronomy -------*/
+/*-------------------------------------------*/
+
+.more {
+    grid-row: 14;
+    grid-column: 2 / 18;    
+    font-weight: bold;
+}
+
+.more-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-flex figure {
+    flex: 1 1 30%;
+    margin: 5px;
+}
+
+.more-flex img {
+    width: 230px;
+}
+
+.more-flex figcaption {
+    max-width: 230px;
+    font-size: .9rem;
+}
+
+/*-------------------------------------------*/
+/*--------------Editor's Pick----------------*/
+/*-------------------------------------------*/
+
+.pick {
+    grid-row: 15;
+    grid-column: 2 / 18;    
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.pick-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pick-flex figure {
+    flex: 1 1 30%;
+    margin: 5px;
+}
+
+.pick-flex img {
+    width: 230px;
+}
+
+.pick-flex figcaption {
+    max-width: 230px;
+    font-size: .9rem;
+}
+
+/*-------------------------------------------*/
+/*------------- Aside popular----------------*/
+/*-------------------------------------------*/
+
+.aside-popular {
+    grid-row: 14 / 16;
+    grid-column: 19 / 24;
+    font-size: 1.1rem;
+}
+
+.aside-popular h2 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*-------------------------------------------*/
+/*----------------- Footer ------------------*/
+/*-------------------------------------------*/
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.footer-container {
+    grid-row: 1;
+    grid-column: 2 / 24;
+}
+
+.footer-title img {
+    margin-top: 1em;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 1em;
+}
+
+.footer-links-section {
+    flex: 1 1 15%;
+}
+
+.footer-links-section h3 {
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.footer-links-section li {
+    line-height: 1.8em;
+    font-size: .9rem;
+}
+
+.footer-copyrights {
+    grid-row: 2;
+    grid-column: 5 / 22;
+    margin-bottom: 1em;
+}
+
+.copyright-links {
+    display: flex;
+    flex-direction: row;
+    font-size: .7rem;
+}
+
+.copyright-links li {
+    margin: 0 .3em;
+}
